@@ -21,11 +21,12 @@ The system is organized into 6 interconnected tables using **1:N (One-to-Many) r
     * `PR_OBIECTE_ASIGURATE`: Describes the specific assets protected by a policy (e.g., vehicles, real estate).
     * `PR_DAUNE`: Logs all incidents and claim estimations associated with active policies.
 
-### 🔍 Business Analytics & Sample Queries
-The project includes complex SQL queries to demonstrate data analysis capabilities:
-* **Multi-table JOINs**: Reporting active contracts with full client and policy details.
-* **Aggregations**: Calculating total claim amounts and average premiums using `GROUP BY` and `HAVING`.
-* **Advanced Logic**: Utilizing **Subqueries**, **Set Operators** (`MINUS`), and conditional logic via **CASE/DECODE** statements.
+### 📐 Database Design Schema
+The visual representation of the database structure, including table relationships and constraints, was designed using [dbdiagram.io](https://dbdiagram.io/).
+
+<p align="center">
+  <img src="schema.png" alt="Database Entity Relationship Diagram" width="800">
+</p>
 
 ### 💻 Tech Stack
 * **Database Engine**: Oracle SQL
