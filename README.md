@@ -28,6 +28,16 @@ The visual representation of the database structure, including table relationshi
   <img src="schema.png" alt="Database Entity Relationship Diagram" width="800">
 </p>
 
+### 🔍 Sample Business Analytics
+Here are a few examples of the analytical queries included in the project:
+
+* **Active Policies Overview**: Retrieves all active contracts with full client and policy type details using multi-table JOINs.
+* **Claims Financial Analysis**: Calculates the total value of claims recorded for each individual policy.
+* **Contract Classification**: Categorizes insurance policies into 'Short Term' or 'Long Term' using conditional logic (CASE statements).
+
+> [!TIP]
+> You can find the full list of 10 complex queries and the complete database setup in the [insurance_db.sql](./insurance_db.sql) file.
+
 ### 💻 Tech Stack
 * **Database Engine**: Oracle SQL
 * **Tools**: Oracle SQL Developer
