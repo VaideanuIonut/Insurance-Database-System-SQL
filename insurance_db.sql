@@ -1,6 +1,4 @@
--- ============================================================
 -- 0. CURATARE BAZA DE DATE (DROP TABLES)
--- ============================================================
 DROP TABLE pr_daune CASCADE CONSTRAINTS;
 DROP TABLE pr_obiecte_asigurate CASCADE CONSTRAINTS;
 DROP TABLE pr_polite CASCADE CONSTRAINTS;
@@ -261,5 +259,7 @@ FROM pr_clienti;
 --10.Afișează Prima Standard rotunjită la cel mai apropiat număr întreg. (Funcție Numerică)
 SELECT nume_tip, prima_standard, ROUND(prima_standard) AS prima_rotunjita 
 FROM pr_tipuri_polita;
+
+
 
 
