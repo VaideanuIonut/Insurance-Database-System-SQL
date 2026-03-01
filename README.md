@@ -1,0 +1,33 @@
+# Insurance Management System (Relational Database)
+
+### 📌 Project Overview
+This project focuses on designing a robust database system for a general insurance company. It was developed to centralize the entire lifecycle of an insurance contract—from client onboarding and policy issuance to claims processing and asset management.
+
+### 🛠️ Technical Features
+* **3rd Normal Form (3NF)**: The database schema is fully normalized to eliminate data redundancy and ensure logical dependency.
+* **Data Integrity**: Implemented using `PRIMARY KEY`, `FOREIGN KEY`, `NOT NULL`, `UNIQUE`, and `CHECK` constraints (e.g., ensuring positive insured sums).
+* **Schema Evolution**: Includes `ALTER TABLE` scripts demonstrating the ability to maintain and update database structures (e.g., adding email fields and capacity upgrades).
+
+### 🏗️ Database Structure
+The system is organized into 6 interconnected tables using **1:N (One-to-Many) relationships**:
+
+1.  **Nomenclature Tables (Reference)**:
+    * `PR_TIPURI_CLIENTI`: Standardizes client categories (e.g., Individual, VIP, NGO).
+    * `PR_TIPURI_POLITA`: Manages policy types and standard premiums (e.g., RCA, CASCO, Life).
+2.  **Main Tables**:
+    * `PR_CLIENTI`: Stores identification and contact details.
+    * `PR_POLITE`: The core of the system, linking clients to specific insurance products and contract terms.
+3.  **Detail Tables**:
+    * `PR_OBIECTE_ASIGURATE`: Describes the specific assets protected by a policy (e.g., vehicles, real estate).
+    * `PR_DAUNE`: Logs all incidents and claim estimations associated with active policies.
+
+### 🔍 Business Analytics & Sample Queries
+The project includes complex SQL queries to demonstrate data analysis capabilities:
+* **Multi-table JOINs**: Reporting active contracts with full client and policy details.
+* **Aggregations**: Calculating total claim amounts and average premiums using `GROUP BY` and `HAVING`.
+* **Advanced Logic**: Utilizing **Subqueries**, **Set Operators** (`MINUS`), and conditional logic via **CASE/DECODE** statements.
+
+### 💻 Tech Stack
+* **Database Engine**: Oracle SQL
+* **Tools**: Oracle SQL Developer
+* **Modeling**: Relational Modeling, 3rd Normal Form (3NF)
